@@ -253,7 +253,7 @@ columns = list(data.keys())
 df = pd.DataFrame([data.values()],columns=columns)
 
 # load model
-with open('model_regresi_coal2.pkl', 'rb') as f:
+with open('model_regresi_coal3.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Predict
@@ -262,7 +262,3 @@ formatted_string = "{:.2f}".format(res[0])
 
 st.write(f"<h1 style='text-align: center; '>Calorie Value</h1>", unsafe_allow_html=True)
 st.write(f"<h1 style='text-align: center; '>{formatted_string}</h1>", unsafe_allow_html=True)
-   
-
-
-
