@@ -1,2 +1,1 @@
 libgl1
-lib[g|i]omp
